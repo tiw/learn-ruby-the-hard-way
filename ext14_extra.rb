@@ -27,9 +27,7 @@ while answer == 'n'
     puts "is you number %d? (y or n)" % right_number
     answer = gets.chomp()
     if answer == 'n'
-        newrange = guess(left, right)
-        left = newrange[0]
-        right = newrange[1]
+        left, right = guess(left, right)
     end
 end
 puts "aha, you number is %d" % right_number
